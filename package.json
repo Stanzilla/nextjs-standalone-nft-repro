@@ -1,0 +1,19 @@
+{
+  "name": "nextjs-standalone-nft-repro",
+  "private": true,
+  "scripts": {
+    "build": "next build",
+    "start": "node .next/standalone/server.js",
+    "repro": "next build && find .next/standalone -name '*.nft.json' | sort"
+  },
+  "dependencies": {
+    "next": "16.5.0-canary.70",
+    "react": "latest",
+    "react-dom": "latest"
+  },
+  "devDependencies": {
+    "@types/node": "latest",
+    "@types/react": "latest",
+    "typescript": "latest"
+  }
+}
